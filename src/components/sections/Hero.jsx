@@ -56,7 +56,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-xl md:text-2xl mb-4 text-blue-100 font-semibold"
+              className="text-xl md:text-2xl mb-4 text-secondary font-semibold"
             >
               Ultrasonido profesional, donde tú estés.
             </motion.p>
@@ -66,7 +66,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-lg md:text-xl mb-10 text-blue-50 max-w-3xl leading-relaxed"
+              className="text-lg md:text-xl mb-10 text-white/90 max-w-3xl leading-relaxed"
             >
               Tecnología inalámbrica de alta definición que se conecta a tu smartphone o tablet
               para ofrecer imágenes clínicas de nivel hospitalario en consulta, clínica, hospital

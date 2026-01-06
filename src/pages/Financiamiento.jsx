@@ -5,48 +5,24 @@ import { FaCreditCard, FaUniversity, FaHandHoldingUsd, FaPercentage } from 'reac
 const Financiamiento = () => {
   const opciones = [
     {
-      icon: <FaCreditCard className="text-5xl text-primary" />,
-      titulo: 'Entrada + Cuotas Mensuales',
-      descripcion: 'Financia tu equipo Clarius con una entrada inicial y cuotas mensuales adaptadas a tu flujo de ingresos',
-      caracteristicas: [
-        'Entrada desde el 30%',
-        'Cuotas mensuales flexibles',
-        'Plazos de 12 a 36 meses',
-        'Aprobación rápida'
-      ]
-    },
-    {
-      icon: <FaUniversity className="text-5xl text-primary" />,
-      titulo: 'Planes Institucionales',
-      descripcion: 'Soluciones especiales para clínicas, hospitales e instituciones médicas con múltiples equipos',
-      caracteristicas: [
-        'Condiciones especiales para instituciones',
-        'Volúmenes corporativos',
-        'Soporte técnico prioritario',
-        'Capacitación grupal incluida'
-      ]
-    },
-    {
       icon: <FaPercentage className="text-5xl text-primary" />,
       titulo: 'Descuentos por Pago al Contado',
       descripcion: 'Obtén el mejor precio pagando el valor total del equipo al momento de la compra',
-      caracteristicas: [
-        'Hasta 10% de descuento',
-        'Sin intereses ni comisiones',
-        'Entrega inmediata',
-        'Garantía completa incluida'
-      ]
     },
     {
       icon: <FaHandHoldingUsd className="text-5xl text-primary" />,
       titulo: 'Financiamiento Personalizado',
       descripcion: 'Diseñamos un plan de pago ajustado a tus necesidades y capacidad económica',
-      caracteristicas: [
-        'Análisis de tu perfil',
-        'Propuesta personalizada',
-        'Flexibilidad en condiciones',
-        'Asesoría financiera gratuita'
-      ]
+    },
+    {
+      icon: <FaCreditCard className="text-5xl text-primary" />,
+      titulo: 'Entrada + Cuotas Mensuales',
+      descripcion: 'Financia tu equipo Clarius con una entrada inicial y cuotas mensuales adaptadas a tu flujo de ingresos',
+    },
+    {
+      icon: <FaUniversity className="text-5xl text-primary" />,
+      titulo: 'Planes Institucionales',
+      descripcion: 'Soluciones especiales para clínicas, hospitales e instituciones médicas con múltiples equipos',
     },
   ];
 
@@ -60,10 +36,10 @@ const Financiamiento = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Opciones de Financiamiento
             </h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto">
               Facilidades de pago para que puedas adquirir tu ecógrafo Clarius sin complicaciones
             </p>
           </motion.div>
@@ -82,19 +58,9 @@ const Financiamiento = () => {
                 <h3 className="text-2xl font-bold text-neutral-dark mb-4">
                   {opcion.titulo}
                 </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed">
                   {opcion.descripcion}
                 </p>
-                <div className="border-t border-gray-200 pt-6">
-                  <ul className="space-y-3">
-                    {opcion.caracteristicas.map((caracteristica, idx) => (
-                      <li key={idx} className="flex items-start">
-                        <span className="text-secondary mr-3 text-xl">✓</span>
-                        <span className="text-gray-700">{caracteristica}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
               </div>
             </Card>
           ))}
@@ -203,7 +169,7 @@ const Financiamiento = () => {
               Cotiza Ahora
             </a>
             <a
-              href="https://wa.me/593992186927?text=Hola,%20quiero%20información%20sobre%20financiamiento"
+              href="https://wa.me/593959253505?text=Hola,%20quiero%20información%20sobre%20financiamiento"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-transparent border-2 border-white hover:bg-white hover:text-secondary text-white font-semibold px-8 py-4 rounded-lg transition-all duration-200 inline-block"

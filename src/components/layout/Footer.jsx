@@ -29,7 +29,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-neutral-dark text-white">
+    <footer className="bg-primary text-white">
       <div className="container-custom py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Información de la Empresa */}
@@ -40,14 +40,23 @@ const Footer = () => {
               Tecnología de ultrasonido de última generación para profesionales médicos.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a
+                href="https://www.facebook.com/share/17u2d4nrEt/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-secondary transition-colors"
+                aria-label="Facebook"
+              >
                 <FaFacebook size={24} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a
+                href="https://www.instagram.com/clarius_ecuador?igsh=ZjNrZnZibmNmYnY3&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-secondary transition-colors"
+                aria-label="Instagram"
+              >
                 <FaInstagram size={24} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <FaLinkedin size={24} />
               </a>
             </div>
           </div>
@@ -93,24 +102,24 @@ const Footer = () => {
               <li className="flex items-start">
                 <FaPhone className="text-secondary mt-1 mr-3 flex-shrink-0" />
                 <div>
-                  <a href="tel:+593992186927" className="text-gray-300 hover:text-white transition-colors">
-                    0992186927
+                  <a href="tel:+593959253505" className="text-gray-300 hover:text-white transition-colors">
+                    095 925 3505
                   </a>
                 </div>
               </li>
               <li className="flex items-start">
                 <FaEnvelope className="text-secondary mt-1 mr-3 flex-shrink-0" />
                 <div>
-                  <a href="mailto:operaciones@jafpharma.com" className="text-gray-300 hover:text-white transition-colors break-all">
-                    operaciones@jafpharma.com
+                  <a href="mailto:ventas@clarius.com" className="text-gray-300 hover:text-white transition-colors break-all">
+                    ventas@clarius.com
                   </a>
                 </div>
               </li>
               <li className="flex items-start">
                 <FaMapMarkerAlt className="text-secondary mt-1 mr-3 flex-shrink-0" />
                 <div className="text-gray-300">
-                  Pasaje Amazonas<br />
-                  Ecuador
+                  Pasaje Guayas y Avenida Amazonas<br />
+                  Quito, Ecuador
                 </div>
               </li>
             </ul>

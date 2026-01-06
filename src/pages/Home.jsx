@@ -99,10 +99,10 @@ const Home = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
               ¿Listo para transformar tu práctica médica?
             </h2>
-            <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
+            <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
               Solicita una cotización personalizada o agenda una demostración gratuita
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

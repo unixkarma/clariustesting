@@ -39,7 +39,7 @@ const Beneficios = () => {
     {
       icon: <FaAward className="text-5xl text-primary" />,
       titulo: 'Garantía y Respaldo',
-      descripcion: 'Equipos con garantía completa del fabricante. Respaldo de JAF-PHARMA, distribuidores autorizados en Ecuador.',
+      descripcion: 'Equipos con garantía de 3 años del fabricante. Respaldo de JAF-PHARMA, distribuidores autorizados en Ecuador.',
     },
   ];
 
@@ -80,10 +80,10 @@ const Beneficios = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               ¿Por qué elegir Clarius.EC?
             </h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto">
               Más que un equipo, una solución completa de ultrasonido portátil para médicos en Ecuador
             </p>
           </motion.div>
