@@ -22,7 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-public/images/video_hero.mp4
-public/images/*.mp4
-public/images/**/*.mp4
-public/images/**/*.mov
