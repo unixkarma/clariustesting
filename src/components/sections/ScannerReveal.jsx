@@ -44,7 +44,7 @@ const ScannerReveal = () => {
   };
 
   const openWhatsApp = () => {
-    const phoneNumber = '593992186927';
+    const phoneNumber = '593959253505';
     const message = 'Hola, me gustaría agendar una demostración de los ecógrafos Clarius';
     window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
   };
@@ -62,7 +62,7 @@ const ScannerReveal = () => {
       className="relative bg-gradient-to-b from-white to-gray-50 text-gray-900 overflow-hidden min-h-screen"
     >
       {/* Scanner Animation Container */}
-      <div className="relative w-full min-h-screen flex items-center justify-center py-20">
+      <div className="relative w-full min-h-screen flex items-center justify-center pt-8 pb-20">
         {/* Left Scanner */}
         <motion.div
           className="absolute z-20 left-0"

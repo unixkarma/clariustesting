@@ -98,7 +98,7 @@ const Especialidades = () => {
         </motion.div>
 
         {/* Grid de Especialidades */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           {especialidades.map((especialidad, index) => (
             <Card key={index} delay={index * 0.1}>
               <div className="p-8 text-center">
@@ -132,6 +132,83 @@ const Especialidades = () => {
           ))}
         </div>
 
+        {/* Sección visual - Urología */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-20"
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-white rounded-2xl shadow-xl p-8 md:p-12">
+            <div>
+              <h3 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+                Urología y Medicina Reproductiva
+              </h3>
+              <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+                Clarius ofrece soluciones especializadas para evaluación urológica y reproductiva con imágenes de alta definición.
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <span className="text-secondary mr-3 text-xl font-bold">•</span>
+                  <span className="text-gray-700">Evaluación prostática transabdominal</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary mr-3 text-xl font-bold">•</span>
+                  <span className="text-gray-700">Estudios vesicales y renales</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary mr-3 text-xl font-bold">•</span>
+                  <span className="text-gray-700">Fertilidad masculina y evaluación testicular</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary mr-3 text-xl font-bold">•</span>
+                  <span className="text-gray-700">Procedimientos guiados por ultrasonido</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="flex justify-center">
+              <img
+                src="/images/extra/_W8A4058_urology.jpg"
+                alt="Clarius en Urología"
+                className="rounded-xl shadow-2xl w-full max-w-md"
+              />
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Sección visual - Uso en consultorio */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-20"
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1 flex justify-center">
+              <img
+                src="/images/extra/_W8A4023-(1).jpg"
+                alt="Clarius en uso clínico profesional"
+                className="rounded-2xl shadow-2xl w-full max-w-md"
+              />
+            </div>
+
+            <div className="order-1 lg:order-2">
+              <h3 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+                Versatilidad en Múltiples Especialidades
+              </h3>
+              <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+                Un solo dispositivo Clarius puede utilizarse en múltiples especialidades médicas, maximizando tu inversión.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Desde medicina familiar hasta subespecialidades complejas, Clarius se adapta a tus necesidades con diferentes transductores especializados.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+
         {/* CTA Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -140,10 +217,10 @@ const Especialidades = () => {
           transition={{ duration: 0.6 }}
           className="mt-16 bg-gradient-to-r from-primary to-primary-dark text-white rounded-2xl p-12 text-center"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             ¿No encuentras tu especialidad?
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-white/90">
             Contáctanos y te asesoramos sobre el scanner ideal para tu práctica médica
           </p>
           <a

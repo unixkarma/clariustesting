@@ -58,10 +58,10 @@ const Testimonios = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Testimonios de Médicos en Ecuador
             </h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto">
               Descubre cómo Clarius está transformando la práctica médica de profesionales ecuatorianos
             </p>
           </motion.div>

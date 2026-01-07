@@ -12,24 +12,29 @@ const Hero = () => {
   };
 
   const openWhatsApp = () => {
-    const phoneNumber = '593992186927';
+    const phoneNumber = '593959253505';
     const message = 'Hola, me gustaría agendar una demostración de los ecógrafos Clarius';
     window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (
     <section className="relative bg-gradient-to-r from-primary to-primary-dark text-white overflow-hidden">
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="absolute inset-0">
-        <img
-          src="/images/hero/hero-background.jpg"
-          alt="Clarius Hero Background"
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           className="w-full h-full object-cover"
-        />
+        >
+          <source src="/images/video_hero.mp4" type="video/mp4" />
+          Tu navegador no soporta el elemento de video.
+        </video>
       </div>
 
       {/* Overlay Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/50 to-primary-dark/40"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-primary/70 to-primary-dark/60"></div>
 
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
