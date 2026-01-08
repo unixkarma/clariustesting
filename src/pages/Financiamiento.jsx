@@ -67,6 +67,51 @@ const Financiamiento = () => {
         </div>
       </section>
 
+      {/* Sección Visual con Imágenes */}
+      <section className="container-custom mb-20">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-neutral-dark mb-4">
+            Invierte en Tecnología de Primer Nivel
+          </h2>
+          <p className="text-xl text-gray-600">
+            Clarius es la inversión que transforma tu práctica médica
+          </p>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <img
+              src="/images/extra/new3.jpg"
+              alt="Profesional médico usando Clarius"
+              className="rounded-xl shadow-lg w-full h-80 object-cover"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            <img
+              src="/images/extra/new4.png"
+              alt="Tecnología Clarius en acción"
+              className="rounded-xl shadow-lg w-full h-80 object-cover"
+            />
+          </motion.div>
+        </div>
+      </section>
+
       {/* Proceso de Adquisición */}
       <section className="bg-neutral-light py-16 mb-20">
         <div className="container-custom">

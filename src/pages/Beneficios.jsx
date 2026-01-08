@@ -18,7 +18,7 @@ const Beneficios = () => {
     {
       icon: <FaGlobe className="text-5xl text-primary" />,
       titulo: 'Tecnología Líder Mundial',
-      descripcion: 'Clarius es reconocido mundialmente por su innovación en ultrasonido portátil. Utilizado por miles de médicos en más de 70 países.',
+      descripcion: 'Clarius es reconocido mundialmente por su innovación en ultrasonido portátil. Utilizado por miles de médicos en más de 100 países alrededor del mundo.',
     },
     {
       icon: <FaMobileAlt className="text-5xl text-primary" />,
@@ -139,7 +139,7 @@ const Beneficios = () => {
               Clarius es el líder mundial en ultrasonido portátil de alta definición. Nuestros scanners combinan inteligencia artificial avanzada, conectividad inalámbrica y la más alta calidad de imagen en un dispositivo que cabe en tu bolsillo.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Únete a miles de profesionales médicos en Ecuador y más de 70 países que ya transformaron su práctica con Clarius.
+              Únete a miles de profesionales médicos en Ecuador y más de 100 países alrededor del mundo que ya transformaron su práctica con Clarius.
             </p>
           </motion.div>
         </div>
@@ -402,11 +402,16 @@ const Beneficios = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <img
-                src="/images/t_mode/injection1 (1).jpeg"
-                alt="Procedimiento guiado con ultrasonido Clarius"
+              <video
+                src="/images/mejoramiento_aguja.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
                 className="rounded-2xl shadow-2xl w-full border-2 border-gray-200"
-              />
+              >
+                Tu navegador no soporta el elemento de video.
+              </video>
             </motion.div>
           </div>
         </div>

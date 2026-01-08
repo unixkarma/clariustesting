@@ -106,7 +106,7 @@ const Home = () => {
               }
             }
             .animate-scroll {
-              animation: scroll 60s linear infinite;
+              animation: scroll 35s linear infinite;
             }
             .animate-scroll:hover {
               animation-play-state: paused;
@@ -221,6 +221,45 @@ const Home = () => {
               />
             </motion.div>
           </div>
+
+          {/* Galería de Imágenes de Uso Clínico */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mt-20"
+          >
+            <h3 className="text-3xl md:text-4xl font-bold text-center text-neutral-dark mb-12">
+              Clarius en la Práctica Médica Real
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+              >
+                <img
+                  src="/images/extra/new1.jpg"
+                  alt="Clarius en uso clínico profesional"
+                  className="rounded-xl shadow-lg w-full h-64 object-cover"
+                />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+              >
+                <img
+                  src="/images/extra/new2.jpg"
+                  alt="Médico usando Clarius"
+                  className="rounded-xl shadow-lg w-full h-64 object-cover"
+                />
+              </motion.div>
+            </div>
+          </motion.div>
         </div>
       </section>
 

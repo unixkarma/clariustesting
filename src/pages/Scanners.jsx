@@ -77,6 +77,16 @@ const Scanners = () => {
       profundidad: 'Hasta 28 cm',
       imagen: '/images/pal.jpg',
     },
+    {
+      id: 'c7',
+      nombre: 'C7 HD3',
+      especialidades: ['cardiaco', 'pediatria', 'neonatal'],
+      descripcion: 'Scanner especializado para cardiología pediátrica y neonatal con excelente resolución',
+      aplicaciones: ['Cardíaco Pediátrico', 'Neonatal', 'Pediatría', 'Ecocardiografía'],
+      frecuencia: '4-8 MHz',
+      profundidad: 'Hasta 20 cm',
+      imagen: '/images/c7.jpg',
+    },
   ];
 
   const scannersFiltrados =

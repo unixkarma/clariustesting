@@ -6,28 +6,40 @@ import { FaQuoteLeft } from 'react-icons/fa';
 const Testimonios = () => {
   const testimonios = [
     {
-      nombre: 'Dr. Pablo Abarca',
-      especialidad: 'Medicina Estética',
-      testimonio: 'Clarius ha sido reconocido como uno de los mejores ecógrafos portátiles para el abordaje facial y representa una verdadera vanguardia en la medicina estética. Nos permite trabajar con total tranquilidad, ya que podemos evaluar profundidades entre 1 y 4 cm durante todo el acto médico. La ecografía se integra en cada etapa del procedimiento, brindándonos imágenes de excelente definición. Además, Clarius ofrece ventajas clave como la inteligencia artificial, la identificación de estructuras ecográficas y un software especializado con Power Doppler y T-Mode. Esta tecnología es una novedad, ya que anteriormente no contábamos con equipos de ultralta frecuencia. El principal beneficio, tanto para el médico como para el paciente, es la seguridad y la tranquilidad.',
+      nombre: 'Dr. Pablo A.',
+      especialidad: 'Especialista en Medicina Estética',
+      testimonio: 'Clarius es uno de los mejores ecógrafos portátiles para el abordaje facial. Ofrece excelente definición de imagen, IA y tecnologías como Power Doppler y T-Mode, brindando seguridad y tranquilidad al médico y al paciente.',
       imagen: '/images/testimonios/doctor1.jpg'
     },
     {
-      nombre: 'Dr. Alfredo Haristoy',
-      especialidad: 'Cirujano Dentista – Radiólogo Oral y Maxilofacial',
-      testimonio: 'Considero que el L15 es un dispositivo excelente. Clarius es superior a muchos equipos de la competencia, especialmente en software, calidad de imagen y desarrollo tecnológico. La inteligencia artificial es una herramienta muy importante desde el punto de vista académico y clínico. Invito a todos los profesionales a interesarse en la ecografía, ya que aporta un valor significativo a la práctica médica.',
+      nombre: 'Dr. Alfredo H.',
+      especialidad: 'Cirujano Dentista / Radiólogo Oral y Maxilofacial',
+      testimonio: 'El L15 de Clarius destaca por su calidad de imagen, software avanzado e inteligencia artificial. Es superior a muchos equipos del mercado y aporta un gran valor académico y clínico.',
       imagen: '/images/testimonios/doctor2.jpg'
     },
     {
-      nombre: 'Dra. Geovana Gutiérrez',
-      especialidad: 'Dermatología',
-      testimonio: 'Clarius es de gran utilidad en dermatología, tanto para el diagnóstico adecuado de enfermedades como para la seguridad en procedimientos estéticos. Nos permite conocer a profundidad estructuras que antes no podíamos visualizar con precisión. Gracias a la ecografía, podemos identificar vasos sanguíneos antes de intervenir y evaluar exactamente procedimientos previos, lo que incrementa notablemente la seguridad del paciente.',
+      nombre: 'Dra. Geovana G.',
+      especialidad: 'Especialista en Dermatología',
+      testimonio: 'Clarius es clave para el diagnóstico dermatológico y la seguridad en procedimientos estéticos. Permite visualizar vasos y estructuras profundas, mejorando la precisión y reduciendo riesgos.',
       imagen: '/images/testimonios/doctora3.jpg'
     },
     {
-      nombre: 'Dr. Alexander Egas',
+      nombre: 'Dr. Alexander E.',
       especialidad: 'Cirujano Plástico',
-      testimonio: 'Clarius es un sistema de ultrasonido que nos permite visualizar de manera directa todas las estructuras internas donde vamos a realizar nuestros procedimientos. Lo que antes se hacía únicamente por palpación, hoy, gracias a este sistema con inteligencia artificial, puede realizarse de forma precisa y directa. Esto es especialmente importante en procedimientos como la lipotransferencia, ya que nos permite saber exactamente dónde colocar la grasa, reduciendo complicaciones que antes eran frecuentes. Logramos mayor seguridad para nuestros pacientes, por lo que considero que debería ser una herramienta fundamental dentro de los procedimientos de lipoescultura y en el seguimiento de la recuperación.',
+      testimonio: 'Clarius permite visualizar en tiempo real las estructuras internas durante procedimientos como la lipotransferencia. Su tecnología e IA aumentan la precisión, reducen complicaciones y mejoran la seguridad del paciente.',
       imagen: '/images/testimonios/doctor4.jpg'
+    },
+    {
+      nombre: 'Dr. Marcos I.',
+      especialidad: 'Anestesiólogo',
+      testimonio: 'Clarius destaca por su fidelidad de imagen e inteligencia artificial, facilitando accesos vasculares y cardíacos. Su portabilidad y comandos de voz son clave para mantener la esterilidad, diferenciándolo claramente de otros equipos.',
+      imagen: '/images/testimonios/doctor5.jpg'
+    },
+    {
+      nombre: 'Dr. Donovan R.',
+      especialidad: 'Médico Vascular',
+      testimonio: 'Comprar Clarius es similar a comprar un Mercedes. Es uno de los mejores ecógrafos portátiles e inalámbricos del mercado, con excelente calidad y desempeño clínico. Un insumo de alto nivel para la práctica médica.',
+      imagen: '/images/testimonios/doctor6.jpg'
     },
   ];
 
@@ -103,8 +115,8 @@ const Testimonios = () => {
           className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20"
         >
           <div className="bg-white rounded-lg shadow-md p-8 text-center">
-            <div className="text-4xl font-bold text-primary mb-2">70+</div>
-            <p className="text-gray-600">Número de países que ahora usan Clarius</p>
+            <div className="text-4xl font-bold text-primary mb-2">100+</div>
+            <p className="text-gray-600">Países alrededor del mundo que ahora usan Clarius</p>
           </div>
           <div className="bg-white rounded-lg shadow-md p-8 text-center">
             <div className="text-4xl font-bold text-primary mb-2">2x</div>
