@@ -5,46 +5,28 @@ import { FaQuoteLeft } from 'react-icons/fa';
 const Testimonios = () => {
   const testimonios = [
     {
-      nombre: 'Dr. Carlos M.',
-      especialidad: 'Emergencias',
-      ciudad: 'Quito',
-      testimonio: 'Desde que uso Clarius he reducido significativamente los tiempos de diagnóstico en emergencias. La portabilidad del equipo me permite hacer evaluaciones FAST al pie de la cama del paciente, lo que ha mejorado la confianza de mis pacientes y la calidad de atención en el servicio.',
+      nombre: 'Dr. Pablo Abarca',
+      especialidad: 'Medicina Estética',
+      testimonio: 'Clarius ha sido reconocido como uno de los mejores ecógrafos portátiles para el abordaje facial y representa una verdadera vanguardia en la medicina estética. Nos permite trabajar con total tranquilidad, ya que podemos evaluar profundidades entre 1 y 4 cm durante todo el acto médico. La ecografía se integra en cada etapa del procedimiento, brindándonos imágenes de excelente definición. Además, Clarius ofrece ventajas clave como la inteligencia artificial, la identificación de estructuras ecográficas y un software especializado con Power Doppler y T-Mode. Esta tecnología es una novedad, ya que anteriormente no contábamos con equipos de ultralta frecuencia. El principal beneficio, tanto para el médico como para el paciente, es la seguridad y la tranquilidad.',
       imagen: '/images/testimonios/doctor1.jpg'
     },
     {
-      nombre: 'Dra. Andrea V.',
-      especialidad: 'Ginecología',
-      ciudad: 'Guayaquil',
-      testimonio: 'Es increíble tener un ecógrafo de alta definición en mi bolsillo. Puedo llevar mi scanner Clarius a consultas domiciliarias y ofrecer el mismo nivel de diagnóstico que en mi consultorio. Mis pacientes quedan sorprendidos con la calidad de las imágenes.',
-      imagen: '/images/testimonios/doctora2.jpg'
+      nombre: 'Dr. Alfredo Haristoy',
+      especialidad: 'Cirujano Dentista – Radiólogo Oral y Maxilofacial',
+      testimonio: 'Considero que el L15 es un dispositivo excelente. Clarius es superior a muchos equipos de la competencia, especialmente en software, calidad de imagen y desarrollo tecnológico. La inteligencia artificial es una herramienta muy importante desde el punto de vista académico y clínico. Invito a todos los profesionales a interesarse en la ecografía, ya que aporta un valor significativo a la práctica médica.',
+      imagen: '/images/testimonios/doctor2.jpg'
     },
     {
-      nombre: 'Dr. Roberto S.',
-      especialidad: 'Traumatología',
-      ciudad: 'Cuenca',
-      testimonio: 'Como traumatólogo deportivo, el Clarius L15 ha sido un cambio total en mi práctica. Puedo evaluar lesiones musculares y tendinosas en tiempo real, guiar infiltraciones con precisión milimétrica y dar respuestas inmediatas a mis pacientes deportistas.',
-      imagen: '/images/testimonios/doctor3.jpg'
+      nombre: 'Dra. Geovana Gutiérrez',
+      especialidad: 'Dermatología',
+      testimonio: 'Clarius es de gran utilidad en dermatología, tanto para el diagnóstico adecuado de enfermedades como para la seguridad en procedimientos estéticos. Nos permite conocer a profundidad estructuras que antes no podíamos visualizar con precisión. Gracias a la ecografía, podemos identificar vasos sanguíneos antes de intervenir y evaluar exactamente procedimientos previos, lo que incrementa notablemente la seguridad del paciente.',
+      imagen: '/images/testimonios/doctora3.jpg'
     },
     {
-      nombre: 'Dra. María F.',
-      especialidad: 'Anestesiología',
-      ciudad: 'Ambato',
-      testimonio: 'Los bloqueos nerviosos guiados por ultrasonido han mejorado notablemente con Clarius. La calidad de imagen es excepcional y la interfaz es muy intuitiva. Además, el soporte técnico local de JAF-PHARMA ha sido excelente.',
-      imagen: '/images/testimonios/doctora4.jpg'
-    },
-    {
-      nombre: 'Dr. Luis P.',
-      especialidad: 'Medicina Interna',
-      ciudad: 'Loja',
-      testimonio: 'En cuidados críticos, cada segundo cuenta. Clarius me permite hacer evaluaciones pulmonares y cardíacas point-of-care sin necesidad de trasladar al paciente. La conectividad con mi tablet es perfecta y las imágenes se guardan automáticamente en la nube.',
-      imagen: '/images/testimonios/doctor5.jpg'
-    },
-    {
-      nombre: 'Dra. Patricia G.',
-      especialidad: 'Dermatología Estética',
-      ciudad: 'Quito',
-      testimonio: 'El Clarius L20 ha revolucionado mi consulta estética. Puedo evaluar con precisión milimétrica los rellenos dérmicos, analizar la calidad de la piel y realizar procedimientos guiados con total seguridad. Mis pacientes valoran mucho esta tecnología.',
-      imagen: '/images/testimonios/doctora6.jpg'
+      nombre: 'Dr. Alexander Egas',
+      especialidad: 'Cirujano Plástico',
+      testimonio: 'Clarius es un sistema de ultrasonido que nos permite visualizar de manera directa todas las estructuras internas donde vamos a realizar nuestros procedimientos. Lo que antes se hacía únicamente por palpación, hoy, gracias a este sistema con inteligencia artificial, puede realizarse de forma precisa y directa. Esto es especialmente importante en procedimientos como la lipotransferencia, ya que nos permite saber exactamente dónde colocar la grasa, reduciendo complicaciones que antes eran frecuentes. Logramos mayor seguridad para nuestros pacientes, por lo que considero que debería ser una herramienta fundamental dentro de los procedimientos de lipoescultura y en el seguimiento de la recuperación.',
+      imagen: '/images/testimonios/doctor4.jpg'
     },
   ];
 
