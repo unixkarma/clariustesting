@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import Card from '../components/common/Card';
+import TrustMetricsBanner from '../components/common/TrustMetricsBanner';
 import {
   FaGlobe,
   FaMobileAlt,
@@ -17,7 +18,7 @@ const Beneficios = () => {
     {
       icon: <FaGlobe className="text-5xl text-primary" />,
       titulo: 'Tecnología Líder Mundial',
-      descripcion: 'Clarius es reconocido mundialmente por su innovación en ultrasonido portátil. Utilizado por miles de médicos en más de 100 países.',
+      descripcion: 'Clarius es reconocido mundialmente por su innovación en ultrasonido portátil. Utilizado por miles de médicos en más de 70 países.',
     },
     {
       icon: <FaMobileAlt className="text-5xl text-primary" />,
@@ -138,7 +139,7 @@ const Beneficios = () => {
               Clarius es el líder mundial en ultrasonido portátil de alta definición. Nuestros scanners combinan inteligencia artificial avanzada, conectividad inalámbrica y la más alta calidad de imagen en un dispositivo que cabe en tu bolsillo.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Únete a miles de profesionales médicos en Ecuador y más de 100 países que ya transformaron su práctica con Clarius.
+              Únete a miles de profesionales médicos en Ecuador y más de 70 países que ya transformaron su práctica con Clarius.
             </p>
           </motion.div>
         </div>
@@ -212,6 +213,48 @@ const Beneficios = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Sección de Alianzas Farmacéuticas y CROs */}
+      <section className="py-20 bg-white">
+        <div className="container-custom">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-5xl mx-auto"
+          >
+            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-8 md:p-12 border-2 border-primary/20">
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                <div className="flex-shrink-0">
+                  <svg
+                    className="w-24 h-24 md:w-32 md:h-32 text-primary"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1.5}
+                      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+                    />
+                  </svg>
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <h3 className="text-2xl md:text-3xl font-bold text-neutral-dark mb-4">
+                    Clarius es aliado de líderes farmacéuticos y CROs
+                  </h3>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    Para avanzar en investigación clínica en medición de volumen vesical,
+                    reumatología y mucho más, con impacto real en la práctica médica.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
@@ -368,6 +411,9 @@ const Beneficios = () => {
           </div>
         </div>
       </section>
+
+      {/* Banner de Métricas de Confianza */}
+      <TrustMetricsBanner />
 
       {/* CTA Final */}
       <section className="container-custom mt-20">

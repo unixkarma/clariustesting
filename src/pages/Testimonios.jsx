@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import Card from '../components/common/Card';
+import TrustMetricsBanner from '../components/common/TrustMetricsBanner';
 import { FaQuoteLeft } from 'react-icons/fa';
 
 const Testimonios = () => {
@@ -78,7 +79,7 @@ const Testimonios = () => {
                         {testimonio.nombre}
                       </p>
                       <p className="text-sm text-gray-600">
-                        {testimonio.especialidad} • {testimonio.ciudad}
+                        {testimonio.especialidad}
                       </p>
                     </div>
                   </div>
@@ -87,8 +88,13 @@ const Testimonios = () => {
             </Card>
           ))}
         </div>
+      </section>
 
-        {/* Estadísticas */}
+      {/* Banner de Métricas de Confianza */}
+      <TrustMetricsBanner />
+
+      {/* Estadísticas */}
+      <section className="container-custom mt-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -97,16 +103,16 @@ const Testimonios = () => {
           className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20"
         >
           <div className="bg-white rounded-lg shadow-md p-8 text-center">
-            <div className="text-4xl font-bold text-primary mb-2">100+</div>
-            <p className="text-gray-600">Países usando Clarius</p>
+            <div className="text-4xl font-bold text-primary mb-2">70+</div>
+            <p className="text-gray-600">Número de países que ahora usan Clarius</p>
           </div>
           <div className="bg-white rounded-lg shadow-md p-8 text-center">
-            <div className="text-4xl font-bold text-primary mb-2">500K+</div>
-            <p className="text-gray-600">Médicos en el mundo</p>
+            <div className="text-4xl font-bold text-primary mb-2">2x</div>
+            <p className="text-gray-600">Crecimiento en la región del Indo-Pacífico</p>
           </div>
           <div className="bg-white rounded-lg shadow-md p-8 text-center">
-            <div className="text-4xl font-bold text-primary mb-2">15M+</div>
-            <p className="text-gray-600">Estudios realizados</p>
+            <div className="text-4xl font-bold text-primary mb-2">30+</div>
+            <p className="text-gray-600">Países que utilizan nuestra tecnología de inteligencia artificial</p>
           </div>
         </motion.div>
 

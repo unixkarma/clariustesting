@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import Hero from '../components/sections/Hero';
 import ScannerReveal from '../components/sections/ScannerReveal';
 import Card from '../components/common/Card';
+import TrustMetricsBanner from '../components/common/TrustMetricsBanner';
 import {
   FaBrain,
   FaWifi,
@@ -222,6 +223,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Banner de Métricas de Confianza */}
+      <TrustMetricsBanner />
 
       {/* Sección CTA */}
       <section className="py-20 bg-gradient-to-r from-primary to-primary-dark text-white">

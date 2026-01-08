@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Card from '../components/common/Card';
 import Button from '../components/common/Button';
+import TrustMetricsBanner from '../components/common/TrustMetricsBanner';
 
 const Scanners = () => {
   const [filtroActivo, setFiltroActivo] = useState('todos');
@@ -224,6 +225,9 @@ const Scanners = () => {
           </div>
         )}
       </div>
+
+      {/* Banner de Métricas de Confianza */}
+      <TrustMetricsBanner />
     </div>
   );
 };
