@@ -393,6 +393,13 @@ const Beneficios = () => {
                     <p className="text-gray-600">Identificación precisa de nervios y fascias</p>
                   </div>
                 </li>
+                <li className="flex items-start">
+                  <span className="text-secondary mr-3 text-2xl font-bold">→</span>
+                  <div>
+                    <span className="text-gray-900 font-semibold">Mejoramiento de aguja</span>
+                    <p className="text-gray-600">Visualización mejorada de agujas durante procedimientos guiados</p>
+                  </div>
+                </li>
               </ul>
             </motion.div>
 
