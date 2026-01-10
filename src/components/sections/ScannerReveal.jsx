@@ -53,8 +53,9 @@ const ScannerReveal = () => {
   // Start at edges, move completely off screen on scroll
   const leftScannerX = scrollProgress * -100; // Start at 0%, move to -100% (off screen)
   const rightScannerX = scrollProgress * 100; // Start at 0%, move to 100% (off screen)
-  const textOpacity = scrollProgress;
-  const textScale = 0.8 + (scrollProgress * 0.2); // Scale from 0.8 to 1
+  // Text reaches full opacity faster (at 60% scroll progress)
+  const textOpacity = Math.min(scrollProgress * 1.67, 1);
+  const textScale = 0.8 + (Math.min(scrollProgress * 1.67, 1) * 0.2); // Scale from 0.8 to 1
 
   return (
     <section
