@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { FaWhatsapp } from 'react-icons/fa';
 
 const WhatsAppButton = () => {
-  const phoneNumber = '593992186927';
+  const phoneNumber = '593959253505';
   const message = 'Hola, estoy interesado en los ecógrafos Clarius';
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

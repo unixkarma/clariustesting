@@ -298,10 +298,10 @@ const Contacto = () => {
                   <div>
                     <p className="font-semibold text-gray-700 mb-1">Teléfono</p>
                     <a
-                      href="tel:+593992186927"
+                      href="tel:+593959253505"
                       className="text-gray-600 hover:text-primary transition-colors"
                     >
-                      0992186927
+                      0959253505
                     </a>
                   </div>
                 </div>
@@ -333,7 +333,7 @@ const Contacto = () => {
 
               <div className="mt-8 pt-8 border-t border-gray-200">
                 <a
-                  href="https://wa.me/593992186927?text=Hola,%20quiero%20más%20información%20sobre%20Clarius"
+                  href="https://wa.me/593959253505?text=Hola,%20quiero%20más%20información%20sobre%20Clarius"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-lg w-full inline-block text-center transition-colors"

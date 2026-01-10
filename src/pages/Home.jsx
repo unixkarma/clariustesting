@@ -289,7 +289,7 @@ const Home = () => {
                 Solicitar Cotización
               </a>
               <a
-                href="https://wa.me/593992186927?text=Hola,%20me%20gustaría%20agendar%20una%20demo"
+                href="https://wa.me/593959253505?text=Hola,%20me%20gustaría%20agendar%20una%20demo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg shadow-lg transition-all duration-200 inline-block"

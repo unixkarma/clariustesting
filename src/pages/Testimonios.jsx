@@ -38,7 +38,7 @@ const Testimonios = () => {
     {
       nombre: 'Dr. Donovan R.',
       especialidad: 'Médico Vascular',
-      testimonio: 'Comprar Clarius es similar a comprar un Mercedes. Es uno de los mejores ecógrafos portátiles e inalámbricos del mercado, con excelente calidad y desempeño clínico. Un insumo de alto nivel para la práctica médica.',
+      testimonio: 'Comprar Clarius es similar a comprar un Mercedes Benz. Es uno de los mejores ecógrafos portátiles e inalámbricos del mercado, con excelente calidad y desempeño clínico. Un insumo de alto nivel para la práctica médica.',
       imagen: '/images/testimonios/doctor6.jpg'
     },
   ];

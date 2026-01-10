@@ -34,13 +34,31 @@ const Navbar = () => {
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="container-custom">
         <div className="flex justify-between items-center h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center">
+          {/* Logo y Leyenda Canadiense */}
+          <Link to="/" className="flex items-center gap-3">
             <img
               src="/images/logo/logo.png"
               alt="Clarius Logo"
-              className="h-8 md:h-10"
+              className="h-10 md:h-14"
             />
+            <div className="hidden md:flex items-center gap-3">
+              <span className="text-gray-300 text-2xl font-light">|</span>
+              <div className="flex items-center gap-2">
+                <img
+                  src="/images/logo/mapleleaf.png"
+                  alt="Canadian Maple Leaf"
+                  className="w-5 h-5 md:w-6 md:h-6 object-contain"
+                />
+                <div className="flex flex-col leading-tight">
+                  <span className="text-[9px] md:text-[10px] text-gray-600 uppercase tracking-wide">
+                    Orgullosamente
+                  </span>
+                  <span className="text-[9px] md:text-[10px] text-gray-600 uppercase tracking-wide">
+                    Origen Canadiense
+                  </span>
+                </div>
+              </div>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
