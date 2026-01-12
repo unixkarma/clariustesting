@@ -6,12 +6,12 @@ const Footer = () => {
 
   const navigation = {
     productos: [
-      { name: 'L15 HD3', path: '/scanners#l15' },
-      { name: 'L20 HD3', path: '/scanners#l20' },
-      { name: 'C3 HD3', path: '/scanners#c3' },
-      { name: 'PA HD3', path: '/scanners#pa' },
-      { name: 'EC7 HD3', path: '/scanners#ec7' },
-      { name: 'PAL HD3', path: '/scanners#pal' },
+      { name: 'L15 HD3', path: '/scanners?scanner=l15' },
+      { name: 'L20 HD3', path: '/scanners?scanner=l20' },
+      { name: 'C3 HD3', path: '/scanners?scanner=c3' },
+      { name: 'PA HD3', path: '/scanners?scanner=pa' },
+      { name: 'EC7 HD3', path: '/scanners?scanner=ec7' },
+      { name: 'PAL HD3', path: '/scanners?scanner=pal' },
     ],
     empresa: [
       { name: 'Inicio', path: '/' },

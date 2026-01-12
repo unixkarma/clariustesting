@@ -1,11 +1,17 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Card from '../components/common/Card';
 import Button from '../components/common/Button';
 import TrustMetricsBanner from '../components/common/TrustMetricsBanner';
+import ScannerModal from '../components/common/ScannerModal';
 
 const Scanners = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
   const [filtroActivo, setFiltroActivo] = useState('todos');
+  const [selectedScanner, setSelectedScanner] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const especialidades = [
     { id: 'todos', nombre: 'Todos los Scanners' },
@@ -100,6 +106,27 @@ const Scanners = () => {
     window.location.href = '/contacto';
   };
 
+  // Detectar query parameter y mostrar modal
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const scannerId = params.get('scanner');
+
+    if (scannerId) {
+      const scanner = scanners.find(s => s.id === scannerId);
+      if (scanner) {
+        setSelectedScanner(scanner);
+        setIsModalOpen(true);
+      }
+    }
+  }, [location.search]);
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedScanner(null);
+    // Limpiar el query parameter de la URL
+    navigate('/scanners', { replace: true });
+  };
+
   return (
     <div className="py-20 bg-neutral-light">
       <div className="container-custom">
@@ -147,6 +174,7 @@ const Scanners = () => {
           {scannersFiltrados.map((scanner, index) => (
             <motion.div
               key={scanner.id}
+              id={scanner.id}
               layout
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -238,6 +266,13 @@ const Scanners = () => {
 
       {/* Banner de Métricas de Confianza */}
       <TrustMetricsBanner />
+
+      {/* Modal del Scanner */}
+      <ScannerModal
+        scanner={selectedScanner}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+      />
     </div>
   );
 };
