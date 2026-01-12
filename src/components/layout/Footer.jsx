@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -48,6 +49,15 @@ const Footer = () => {
                 aria-label="Facebook"
               >
                 <FaFacebook size={24} />
+              </a>
+              <a
+                href="https://x.com/Clarius_ecuador"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-secondary transition-colors"
+                aria-label="X (Twitter)"
+              >
+                <FaXTwitter size={24} />
               </a>
               <a
                 href="https://www.instagram.com/clarius_ecuador?igsh=ZjNrZnZibmNmYnY3&utm_source=qr"
