@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import SEO from '../components/SEO';
 import Hero from '../components/sections/Hero';
 import ScannerReveal from '../components/sections/ScannerReveal';
 import Card from '../components/common/Card';
@@ -70,6 +71,12 @@ const Home = () => {
 
   return (
     <div>
+      <SEO
+        title="Ecógrafos en Ecuador | Clarius - Ultrasonido Portátil Inalámbrico"
+        description="Clarius: los mejores ecógrafos portátiles inalámbricos en Ecuador. Alta definición con IA para médicos. Modelos L15, L20, C3, PA, EC7 y más. Solicita tu cotización."
+        keywords="ecógrafos en Ecuador, ecógrafo portátil Ecuador, ultrasonido portátil Ecuador, ecógrafo inalámbrico Ecuador, Clarius Ecuador, comprar ecógrafo Ecuador, ecógrafo Quito, ecógrafo sin cables"
+        canonical="/"
+      />
       <Hero />
 
       {/* Sección de Animación de Scanners */}

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import SEO from '../components/SEO';
 import Card from '../components/common/Card';
 import {
   FaSyringe,
@@ -81,6 +82,12 @@ const Especialidades = () => {
 
   return (
     <div className="py-20 bg-neutral-light">
+      <SEO
+        title="Especialidades Médicas | Ecógrafos Clarius Ecuador"
+        description="Ecógrafos Clarius para anestesiología, emergencias, ginecología, dermatología, traumatología y medicina interna en Ecuador. Ultrasonido inalámbrico para cada especialidad."
+        keywords="ecógrafo anestesiología Ecuador, ultrasonido emergencias Ecuador, ecógrafo ginecología, ecógrafo dermatología Ecuador, ultrasonido traumatología, ecógrafo portátil especialidades"
+        canonical="/especialidades"
+      />
       <div className="container-custom">
         {/* Encabezado */}
         <motion.div

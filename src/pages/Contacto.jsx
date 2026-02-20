@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
+import SEO from '../components/SEO';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaCheckCircle } from 'react-icons/fa';
 import Button from '../components/common/Button';
 
@@ -72,6 +73,12 @@ const Contacto = () => {
 
   return (
     <div className="py-20 bg-neutral-light">
+      <SEO
+        title="Contacto | Cotiza tu Ecógrafo Clarius en Ecuador"
+        description="Solicita una cotización o agenda una demo gratuita de ecógrafos Clarius en Ecuador. Llámanos al +593 959 253505 o escríbenos por WhatsApp. Quito, Ecuador."
+        keywords="contacto Clarius Ecuador, cotizar ecógrafo Ecuador, demo ecógrafo portátil, comprar ecógrafo Quito, ecógrafo WhatsApp Ecuador"
+        canonical="/contacto"
+      />
       <div className="container-custom">
         {/* Encabezado */}
         <motion.div

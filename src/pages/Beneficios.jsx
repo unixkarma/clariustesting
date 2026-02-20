@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import SEO from '../components/SEO';
 import Card from '../components/common/Card';
 import TrustMetricsBanner from '../components/common/TrustMetricsBanner';
 import {
@@ -90,6 +91,12 @@ const Beneficios = () => {
 
   return (
     <div className="py-20">
+      <SEO
+        title="Beneficios del Ecógrafo Clarius | IA, Inalámbrico y Portátil en Ecuador"
+        description="Descubre por qué Clarius es el mejor ecógrafo portátil en Ecuador: alta definición con IA, 100% inalámbrico, app iOS y Android, control por voz, T Mode y más."
+        keywords="beneficios ecógrafo portátil, ultrasonido con IA Ecuador, ecógrafo inalámbrico ventajas, T Mode ultrasonido, ecógrafo app móvil, ultrasonido sin cables"
+        canonical="/beneficios"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary to-primary-dark text-white py-16 mb-20">
         <div className="container-custom text-center">

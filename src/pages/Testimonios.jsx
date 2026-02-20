@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import SEO from '../components/SEO';
 import Card from '../components/common/Card';
 import TrustMetricsBanner from '../components/common/TrustMetricsBanner';
 import { FaQuoteLeft } from 'react-icons/fa';
@@ -45,6 +46,12 @@ const Testimonios = () => {
 
   return (
     <div className="py-20">
+      <SEO
+        title="Testimonios de Médicos | Ecógrafos Clarius Ecuador"
+        description="Lo que dicen los médicos ecuatorianos sobre Clarius. Testimonios reales de especialistas que usan ecógrafos portátiles Clarius en su práctica clínica diaria."
+        keywords="testimonios ecógrafo Clarius, médicos Ecuador ecógrafo portátil, reseñas Clarius Ecuador, experiencias ultrasonido portátil"
+        canonical="/testimonios"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary to-primary-dark text-white py-16 mb-20">
         <div className="container-custom text-center">

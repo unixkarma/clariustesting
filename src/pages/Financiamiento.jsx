@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import SEO from '../components/SEO';
 import Card from '../components/common/Card';
 import { FaCreditCard, FaUniversity, FaHandHoldingUsd, FaPercentage } from 'react-icons/fa';
 
@@ -28,6 +29,12 @@ const Financiamiento = () => {
 
   return (
     <div className="py-20">
+      <SEO
+        title="Financiamiento de Ecógrafos Clarius Ecuador | Planes de Pago Flexibles"
+        description="Financia tu ecógrafo Clarius en Ecuador con planes personalizados: contado, cuotas mensuales y planes institucionales para clínicas y hospitales. Solicita información."
+        keywords="financiamiento ecógrafo Ecuador, comprar ecógrafo cuotas, plan de pago ecógrafo, ecógrafo Clarius precio Ecuador, ecógrafo hospital clínica Ecuador"
+        canonical="/financiamiento"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary to-primary-dark text-white py-16 mb-20">
         <div className="container-custom text-center">

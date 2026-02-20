@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import SEO from '../components/SEO';
 import Card from '../components/common/Card';
 import Button from '../components/common/Button';
 import TrustMetricsBanner from '../components/common/TrustMetricsBanner';
@@ -129,6 +130,12 @@ const Scanners = () => {
 
   return (
     <div className="py-20 bg-neutral-light">
+      <SEO
+        title="Ecógrafos Portátiles Clarius en Ecuador | L15, L20, C3, PA, EC7"
+        description="Conoce la familia completa de ecógrafos Clarius en Ecuador: L15, L20, C3, PA HD3, EC7, PAL, C7. Ultrasonido portátil inalámbrico para todas las especialidades médicas."
+        keywords="ecógrafo L15 Ecuador, ecógrafo L20 Ecuador, ecógrafo portátil cardiología, ecógrafo ginecología Ecuador, ultrasonido MSK Ecuador, ecógrafo dermatología, Clarius C3 Ecuador"
+        canonical="/scanners"
+      />
       <div className="container-custom">
         {/* Encabezado */}
         <motion.div
